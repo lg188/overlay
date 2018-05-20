@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit git-r3
+inherit git-r3 eutils
 
 DESCRIPTION="Oil shell"
 HOMEPAGE="https://oilshell.org"
@@ -17,3 +17,8 @@ IUSE=""
 
 DEPEND=""
 RDEPEND="${DEPEND}"
+CBUILD=""
+
+src_configure(){
+	econf
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+<email>lander.ghekiere@gmail.com</email>
+<name>lg188</name>
+</maintainer>
+<maintainer type="person">
+<email>fdsfgs@krutt.org</email>
+<name>soredake</name>
+</maintainer>
+<longdescription lang="en">
+A GTK2 image viewer, manga reader, and booru browser
+
+</longdescription>
+</pkgmetadata>

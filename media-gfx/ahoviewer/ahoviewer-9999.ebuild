@@ -1,10 +1,9 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=5
 
-inherit autotools eutils vcs-snapshot fdo-mime gnome2-utils
+inherit autotools eutils vcs-snapshot xdg-utils  gnome2-utils
 
 DESCRIPTION="A GTK2 image viewer, manga reader, and booru browser"
 HOMEPAGE="https://github.com/ahodesuka/ahoviewer"
@@ -60,7 +59,7 @@ pkg_preinst() {
 }
 
 pkg_postinst() {
-	fdo-mime_desktop_database_update
+	xdg-utils_desktop_database_update
 	gnome2_icon_cache_update
 }
 
@@ -68,3 +67,5 @@ pkg_postrm() {
 	fdo-mime_desktop_database_update
 	gnome2_icon_cache_update
 }
+
+
